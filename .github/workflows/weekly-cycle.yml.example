@@ -1,0 +1,36 @@
+# OPTIONAL — Week 9 onward, and the Thanksgiving Autonomy Stress Test.
+# Rename to weekly-cycle.yml to activate. Runs the workgroup on a schedule from GitHub's servers,
+# so it works while every laptop is closed. The Actions run log is the intervention audit trail.
+#
+# Requires the same secret as claude.yml. Scheduled workflows run ONLY from the default branch (main).
+# Times are UTC. "0 13 * * 1" = Mondays 13:00 UTC = 8:00 AM Eastern (9:00 AM after the November clock change).
+#
+# Reference: https://code.claude.com/docs/en/github-actions ("Run on a schedule")
+
+name: Weekly production cycle
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:   # lets the operator start a run by hand from the Actions tab
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # or: claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Run this week's production cycle as the lead agent. Read CLAUDE.md and strategy/ first.
+            Produce the content calendar for the coming week, draft every piece via the content-creator
+            agent, run each draft through the qa-governance agent, and open ONE pull request titled
+            "Weekly cycle <date>" containing only drafts that passed QA. Append a line per step to ops/run-log.md.
+            Do not publish anything. Do not touch personal data.
+          claude_args: "--max-turns 40"

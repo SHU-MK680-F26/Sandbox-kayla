@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git checkout*)",
+      "Bash(git switch*)",
+      "Bash(git branch*)",
+      "Bash(git push*)",
+      "Bash(git pull*)",
+      "Bash(curl -s *)",
+      "Bash(ls*)",
+      "Bash(cat *)",
+      "Bash(gh pr *)",
+      "Bash(gh repo clone *)",
+      "Bash(gh auth status*)",
+      "Bash(git fetch*)",
+      "Bash(git merge*)",
+      "Bash(open *)",
+      "Bash(start *)",
+      "Bash(xdg-open *)",
+      "Bash(mkdir *)",
+      "Bash(python3 *)",
+      "Bash(node *)"
+    ],
+    "deny": [
+      "Bash(curl * | bash*)",
+      "Bash(curl * | sh*)",
+      "Bash(rm -rf *)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Bash(git push * main*)",
+      "Bash(git push origin main*)"
+    ]
+  }
+}
