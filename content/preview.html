@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Major Motion Media — Launch Preview</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --text: #262626;
+    --muted: #8e8e8e;
+    --border: #dbdbdb;
+    --accent: #405de6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #f0f0f0;
+      --muted: #a8a8a8;
+      --border: #383838;
+      --accent: #7385f0;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .header {
+    max-width: 900px;
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+  }
+  .header p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  @media (max-width: 720px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+  .tile {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .tile-image {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .tile-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .tile-caption {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 10px;
+    flex: 1;
+  }
+  .tile-hashtags {
+    font-size: 0.82rem;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  .tile-meta {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Major Motion Media</h1>
+    <p>Launch preview — 3 Instagram posts, drafted by content-creator, reviewed by qa-governance (PASS)</p>
+  </div>
+  <div class="grid">
+    <div class="tile">
+      <div class="tile-image">Flat-lay: laptop, notebook, coffee, small "Major Motion Media" logo card</div>
+      <div class="tile-body">
+        <p class="tile-caption">We started Major Motion Media because Hartford's small businesses deserve marketing that actually gets results — not another agency talking over your head.</p>
+        <p class="tile-hashtags">#HartfordSmallBusiness #MarketingThatMakesSense #StartupSupport</p>
+        <p class="tile-meta">179 characters</p>
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile-image">Split graphic: chaotic sticky-note wall ("before") vs. organized content calendar ("after")</div>
+      <div class="tile-body">
+        <p class="tile-caption">You know your business better than anyone. We just handle the marketing part — strategy, content, and reporting, explained in plain English, no jargon required.</p>
+        <p class="tile-hashtags">#SmallBusinessMarketing #NoJargon #HartfordCT</p>
+        <p class="tile-meta">173 characters</p>
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile-image">Friendly handshake graphic with the Major Motion Media wordmark</div>
+      <div class="tile-body">
+        <p class="tile-caption">Ready to see what a marketing partner who actually listens looks like? Send us a message and let's talk about where your business is headed. <em>[NEEDS TEAM CONFIRMATION: booking link]</em></p>
+        <p class="tile-hashtags">#WorkWithUs #HartfordStartups #MajorMotionMedia</p>
+        <p class="tile-meta">200 characters</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

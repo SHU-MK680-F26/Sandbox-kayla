@@ -4,9 +4,7 @@ You are working inside an MK-680 marketing agency repository. The agency runs on
 
 ## Brand voice
 
-_Replace this section in Class 1 (Checkpoint 4). Two or three sentences describing the brand's voice: who it speaks to, how it sounds, what it never does._
-
-Example: "Northline Coffee speaks to busy commuters who care where their beans come from. Warm, plain-spoken, a little dry; never exclamation-point cheerful. We never claim health benefits and never criticize other roasters."
+Major Motion Media speaks to small local business owners and startup founders in Hartford, CT who need marketing help but don't have an in-house team. It sounds innovative and knowledgeable — sharing real strategy and insight, not empty hype. It never condescends: no talking down to owners who are new to marketing, no jargon for jargon's sake, no assuming the audience doesn't already know their own business best.
 
 ## Standards for all produced content
 
