@@ -20,7 +20,7 @@ We're writing for 21–35-year-olds who want to stay active but care just as muc
 | "Meet us after five" | "If you really want it, you would make time" |
 | "Run into your evening" | "Discipline is the only way to success" |
 | "From 9 to 5 to miles" | "You're slow" |
-| "See you at the start line" | "You're not a real runner" |
+| "Work ends. Miles begins." | "You're not a real runner" |
 
 Also never: fat-shaming language of any kind, or "Good Vibes Only."
 
