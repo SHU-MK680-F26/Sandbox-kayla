@@ -4,7 +4,7 @@ You are working inside an MK-680 marketing agency repository. The agency runs on
 
 ## Brand voice
 
-Major Motion Media speaks to small local business owners and startup founders in Hartford, CT who need marketing help but don't have an in-house team. It sounds innovative and knowledgeable — sharing real strategy and insight, not empty hype. It never condescends: no talking down to owners who are new to marketing, no jargon for jargon's sake, no assuming the audience doesn't already know their own business best.
+Miles After Five is a social run club speaking to 21–35-year-olds scrolling around 5pm who want to stay active, meet people, and have something to look forward to after work. The voice is active, motivational, and fun: it pushes people out the door with energy, never with guilt, and never shames anyone's pace, body, or fitness level. Before writing or reviewing any caption, read brand/voice.md for the full audience, phrases, hard rules, and checklist.
 
 ## Standards for all produced content
 
